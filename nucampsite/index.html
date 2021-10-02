@@ -23,16 +23,15 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="row">
             <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                <img src="img/logo.png" class="img-fluid" />
+                <img src="img/logo.png" class="img-fluid" alt="NuCamp logo" />
             </div>
             <div class="col">
                 <h1>NuCamp</h1>
                 <h2>a better way to camp</h2>
             </div>
             <div class="col-md-4 col-xl-2 align-right mt-4">
-                <a href="#reserveForm">
-                    <button class="btn-primary bg-info text-white btn-lg">Reserve a Campsite</button>
-                </a>
+                <a class="btn-primary bg-info text-white btn-lg" href="#reserveForm">Reserve a Campsite</a>
+                
             </div>
         </div>
 
@@ -40,10 +39,8 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" alt="NuCamp mini-logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-            <button class="navbar-toggler" type="button"
-            data-toggle="collapse" datra-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button> 
             <div class="collapse navbar-collapse" id="nucampNavbar">
@@ -72,7 +69,8 @@
                 <p class="d-none d-sm-block ">Explore our growing database of curated campsites and leave your own reviews!</p>             
             </div>
         </div>
-
+    </div>
+    <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
@@ -81,13 +79,15 @@
                 <h3>React Lake Campground</h3>
                 <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
             </div>
-            <div class="media">
-                <div class="pl-3 d-flex mr-3 img-thumbnail"> 
-                    <img src="img/react-lake-thumb.jpg" />
+            <div class="media pl-3">
+                <div class="d-flex mr-3 img-thumbnail"> 
+                    <img src="img/react-lake-thumb.jpg" alt="react lake thumbnail"/>
                 </div> 
             </div>
         </div>
+    </div>
 
+    <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
@@ -102,13 +102,15 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="row row-content">
             <div class="col-sm-6 mx-auto">
                 <div class="card">
                     <h3 class="card-header bg-info text-white">Reserve a campsite</h3>
                     <div class="card-body">
                         <form id="reserveForm">
-                            <dl class="row form-group">
+                            <div class="row form-group">
                                 <!--<dt class="col-6">Number of Campers</dt> -->
                                 <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers:</label>
                                 <div class="col">
@@ -122,19 +124,20 @@
                                         <option value="6">6</option>
                                     </select>
                                 </div>
-                            </dl>
-                            <dl class="row form-group">
+                            </div>
+                            <div class="row form-group">
                                 <!--<dt class="col-6">Number of Campers</dt> -->
                                 <label for="date" class="col-sm-6 col-form-label">Date:</label>
                                 <div class="col">
                                     <input name="date" id="date" placeholder="mm/dd/yyyy" class="col"/>
 
                                 </div>
-                            </dl>
-                            <d1 class="row col col-form-label form-group">
-                                <button for="search" class="btn btn-primary" type="submit">Search</button>
-                            </d1>
+                            </div>
+                            <div class="row col col-form-label form-group">
+                                <button class="btn btn-primary" type="submit">Search</button>
+                            </div>
                         </form>
+                    </div>
                 </div>               
 
             </div>  
@@ -153,7 +156,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-sm-5" text-center>
+                <div class="col-6 col-sm-5">
                     <h5>Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
