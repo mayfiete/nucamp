@@ -23,7 +23,7 @@ corresponding button is clicked.
 
 $(function () {
   // Attach Button click event listener 
- $("#reserveButton").click(function(){
+ $("#reserveButton").on("click", function(){
 
       // show Modal
       $('#reservecsModal').modal('show');
@@ -32,7 +32,7 @@ $(function () {
 
 $(function () {
   // Attach Button click event listener 
- $("#loginButton").click(function(){
+ $("#loginButton").on("click", function(){
 
       // show Modal
       $('#loginModal').modal('show');
